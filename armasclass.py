@@ -11,11 +11,20 @@ class Armas(Caracterizacion):
     def arma_filof(self, arma_filo):
         self.__arma_filo = arma_filo
 
+    def get_arma_filof(self):
+        return self.__arma_filo
+
     def arma_fuegof(self, arma_fuego):
         self.__arma_fuego = arma_fuego
 
+    def get_arma_fuegof(self):
+        return self.__arma_fuego
+
     def otrof(self, otro):
         self.__otro = otro
+
+    def get_otrof(self):
+        return self.__otro
 
     def __str__(self) -> str:
         print("Arma de filo : ", self.__arma_filo)

@@ -7,19 +7,31 @@ class Personajes(ABC):
         self.__id = 0
         self.__nombre = None
         self.__vida = 0
-        self.__liga = 0
+        self.__liga = "Naga"
 
     def idf(self, id):
         self.__id = id
 
+    def get_idf(self):
+        return self.__id
+
     def nombref(self, nombre):
         self.__nombre = nombre
+
+    def get_nombref(self):
+        return self.__nombre
 
     def vidaf(self):
         self.__vida = 800
 
+    def get_vidaf(self):
+        return self.__vida
+
     def ligaf(self, liga):
         self.__liga = liga
+
+    def get_ligaf(self):
+        return self.__liga
 
     def __str__(self):
         print("Id : ", self.__id)
@@ -29,5 +41,6 @@ class Personajes(ABC):
 
 
 a = Personajes()
-a.idf(12334)
+a.idf(0)
 a.__str__()
+

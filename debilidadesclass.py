@@ -1,7 +1,11 @@
 from caracterizacion import Caracterizacion
-    # __frio: bool
-    # __calor: bool
+
+
 class Debilidades(Caracterizacion):
+    
+    __frio: bool
+    __calor: bool
+    
     def __init__(self):
         self.__frio = False
         self.__calor = False
@@ -9,14 +13,20 @@ class Debilidades(Caracterizacion):
     def friof(self, frio):
         self.__frio = frio
 
+    def get_friof(self):
+        return self.__frio
+
     def calorf(self, calor):
         self.__calor = calor
 
+    def get_calorf(self):
+        return self.__calor
+
     def __str__(self) -> str:
-        if(self.__frio):
-            print("Debilidad : Calor")
+        if (self.__frio):
+            return "Debilidad : Calor"
         else:
-            if(self.__calor):
-                print("Debilidad : Frio")
+            if (self.__calor):
+                return "Debilidad : Frio"
             else:
-                print("Debilidad: Frio, Calor")
+                return "Debilidad: Frio, Calor"
