@@ -22,7 +22,7 @@ jobs:
       - name: Run tox
         run: tox -e py
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@main
+        uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: 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 # 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  # Needed to get PR information, if any
           SONAR_TOKEN: 261c9a594b524f798c371f19a182f8039e6d2fd0 # 931be8f50dac29a21525b312479af253d2d001cd
