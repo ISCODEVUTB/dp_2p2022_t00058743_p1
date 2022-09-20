@@ -1,6 +1,6 @@
 import unittest
 
-from ianormal import Normal
+from inormal import Normal
 
 
 class Testnormal(unittest.TestCase):
