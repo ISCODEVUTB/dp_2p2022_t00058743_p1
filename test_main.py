@@ -33,21 +33,19 @@ class Testmain(unittest.TestCase):
     def test_debilidades(self):
         a = Debilidades()
 
-        frio=False
+        frio=True
         a.friof(frio)
         self.assertEqual(a.get_friof(), frio)
 
-        calor=False
+        calor=True
         a.calorf(calor)
         self.assertEqual(a.get_calorf(), calor)
 
         if (frio):
             self.assertEqual(a.__str__(), "Debilidad : Calor")
-        else:
-            if (calor):
-                self.assertEqual(a.__str__(), "Debilidad : Frio")
-            else:
-                self.assertEqual(a.__str__(), "Debilidad: Frio, Calor")
+        
+        if (calor):
+            self.assertEqual(a.__str__(), "Debilidad : Frio")
 
     def test_ca_enemigo(self):
         a = Enemigo()
