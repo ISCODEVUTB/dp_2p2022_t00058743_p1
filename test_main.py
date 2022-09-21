@@ -45,7 +45,7 @@ class Testmain(unittest.TestCase):
             self.assertEqual(a.__str__(), "Debilidad : Calor")
         
         if (calor):
-            self.assertEqual(a.__str__(), "Debilidad : Frio")
+            self.assertEqual(a.__str__(), "Debilidad : Calor")
 
     def test_ca_enemigo(self):
         a = Enemigo()

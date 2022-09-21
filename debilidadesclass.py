@@ -26,7 +26,4 @@ class Debilidades(Caracterizacion):
         if (self.__frio):
             return "Debilidad : Calor"
         else:
-            if (self.__calor):
-                return "Debilidad : Frio"
-            else:
-                return "Debilidad: Frio, Calor"
+            return "Debilidad : Frio"
