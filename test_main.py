@@ -1,8 +1,12 @@
 import unittest
 
 from armasclass import Armas
+from artificialclass import Artificial
 from debilidadesclass import Debilidades
 from enemigoclass import Enemigo
+from humanoclass import Humano
+from ianormal import Anormal
+from inormal import Normal
 from personajesclass import Personajes
 from habilidadesclass import Habilidades
 from personajesclass import Personajes
@@ -117,10 +121,16 @@ class Testmain(unittest.TestCase):
         fuerza = 1
         a.superfuerza(fuerza)
         self.assertEqual(a.get_supervelocidad(), fuerza)
-        
+        q= Normal()
+        x = Anormal()
+        r = Humano()
+        h = Artificial()
         volar = 1
         a.volarf(volar)
         self.assertEqual(a.get_volarf(), volar)
+
+        
+
 
 if __name__ == '__main__':
     unittest.main()
